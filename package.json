@@ -1,6 +1,6 @@
 {
   "name": "@justdice/react-native-country-codes-picker",
-  "version": "2.3.6",
+  "version": "2.3.7",
   "description": "This lib. provide country iso picker with search functionality",
   "main": "index.tsx",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/GeorgeHop/react-native-country-codes-picker.git"
+    "url": "git+https://github.com/justdice/react-native-country-codes-picker"
   },
   "keywords": [
     "react-native",
@@ -23,13 +23,12 @@
   "author": "George Hope",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/GeorgeHop/react-native-country-codes-picker/issues"
+    "url": "https://github.com/justdice/react-native-country-codes-picker/issues"
   },
   "contributors": [
     {
-      "name": "Mutovkin Yurii",
-      "email": "georgehopekek@gmail.com",
-      "url": "https://github.com/GeorgeHop"
+      "name": "Sebastian Funck",
+      "email": "bastian@justdice.io"
     }
   ],
   "peerDependencies": {
@@ -41,7 +40,7 @@
     "@types/react-native": "~0.73.0",
     "typescript": "^4.8.2"
   },
-  "homepage": "https://github.com/GeorgeHop/react-native-country-codes-picker#readme",
+  "homepage": "https://github.com/justdice/react-native-country-codes-picker#readme",
   "dependencies": {
     "@types/react-dom": "^19.0.0",
     "react": "^19.0.0",
