@@ -1,3 +1,5 @@
+This is a fork of [GeorgeHop/react-native-country-codes-picker](https://github.com/GeorgeHop/react-native-country-codes-picker). Because the original repository is not maintained anymore, we decided to fork it and continue basic maintenance development.
+------
 # react-native-country-codes-picker
 
 :zap: :zap: :zap: This lib. provide multi lang. country picker or country list with search functionality. Fully crossplatform and supported on React-native and expo.

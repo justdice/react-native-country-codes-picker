@@ -1,6 +1,6 @@
 {
-  "name": "react-native-country-codes-picker",
-  "version": "2.3.5",
+  "name": "@justdice/react-native-country-codes-picker",
+  "version": "2.3.6",
   "description": "This lib. provide country iso picker with search functionality",
   "main": "index.tsx",
   "scripts": {
@@ -37,9 +37,14 @@
     "react-native": "*"
   },
   "devDependencies": {
-    "@types/react": "~18.0.0",
-    "@types/react-native": "~0.69.1",
+    "@types/react": "~19.0.0",
+    "@types/react-native": "~0.73.0",
     "typescript": "^4.8.2"
   },
-  "homepage": "https://github.com/GeorgeHop/react-native-country-codes-picker#readme"
+  "homepage": "https://github.com/GeorgeHop/react-native-country-codes-picker#readme",
+  "dependencies": {
+    "@types/react-dom": "^19.0.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  }
 }
