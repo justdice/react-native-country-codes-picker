@@ -1,5 +1,5 @@
 import React, {useEffect, useRef, useState} from "react";
-import {EmitterSubscription, Keyboard, Platform} from "react-native";
+import {type EmitterSubscription, Keyboard, Platform} from "react-native";
 
 /*
 * This func. listen the keyboard and

@@ -9,11 +9,11 @@ import {
     Easing,
     Platform,
     Keyboard,
-    ViewStyle,
+    type ViewStyle,
     Modal,
-    TextStyle
+    type TextStyle
 } from 'react-native';
-import { CountryItem, ItemTemplateProps, Style, ListHeaderComponentProps } from "./types/Types";
+import type { CountryItem, ItemTemplateProps, Style, ListHeaderComponentProps } from "./types/Types";
 import { useKeyboardStatus } from "./helpers/useKeyboardStatus";
 import { CountryButton } from "./components/CountryButton";
 import { countriesRemover } from "./helpers/countriesRemover";
@@ -156,14 +156,11 @@ export const CountryPicker = ({
     const resultCountries = React.useMemo(() => {
         const lowerSearchValue = searchValue.toLowerCase();
 
-        return codes.filter((country) => {
-            if (country?.dial_code.includes(searchValue) ||
-                country?.name[lang || 'en'].toLowerCase().includes(lowerSearchValue) ||
-                removeDiacritics(country?.name[lang || 'en'].toLowerCase()).includes(lowerSearchValue)
-            ) {
-                return country;
-            }
-        });
+        return codes.filter((country) =>
+          country?.dial_code.includes(searchValue) ||
+          country?.name[lang || 'en'].toLowerCase().includes(lowerSearchValue) ||
+          removeDiacritics(country?.name[lang || 'en'].toLowerCase()).includes(lowerSearchValue)
+        );
     }, [searchValue]);
 
     const modalPosition = animationDriver.interpolate({
@@ -382,14 +379,11 @@ export const CountryList = ({
     const resultCountries = React.useMemo(() => {
         const lowerSearchValue = searchValue.toLowerCase();
 
-        return codes.filter((country) => {
-            if (country?.dial_code.includes(searchValue) ||
-                country?.name[lang || 'en'].toLowerCase().includes(lowerSearchValue.trim()) ||
-                removeDiacritics(country?.name[lang || 'en'].toLowerCase()).includes(lowerSearchValue.trim())
-            ) {
-                return country;
-            }
-        });
+        return codes.filter((country) =>
+          country?.dial_code.includes(searchValue) ||
+          country?.name[lang || 'en'].toLowerCase().includes(lowerSearchValue.trim()) ||
+          removeDiacritics(country?.name[lang || 'en'].toLowerCase()).includes(lowerSearchValue.trim())
+        );
     }, [searchValue]);
 
     const renderItem = ({ item, index }: { item: CountryItem, index: number }) => {

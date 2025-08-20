@@ -1,4 +1,4 @@
-import {CountryItem} from "../types/Types";
+import type {CountryItem} from "../types/Types";
 
 export const countryCodes: CountryItem[] = [
     {

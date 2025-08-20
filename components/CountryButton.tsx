@@ -1,6 +1,6 @@
 import React from 'react';
-import { Text, TouchableOpacity, ViewStyle } from "react-native";
-import { ItemTemplateProps } from "../types/Types";
+import { Text, TouchableOpacity, type ViewStyle } from "react-native";
+import type { ItemTemplateProps } from "../types/Types";
 
 
 export const CountryButton = ({ item, name, style, ...rest }: ItemTemplateProps) => (
